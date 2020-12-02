@@ -7,6 +7,11 @@ body {
   background-color: white;
 }
 
+.dark {
+  background-color: black;
+  transition: 0.5s;
+}
+
 h1 {
   font-size: 72px;
 }
@@ -17,7 +22,7 @@ h1, h2, h3{
 }
 
 .main {
-  background-color: white;
+  // background-color: white;
   border-radius: 8px;
 }
 

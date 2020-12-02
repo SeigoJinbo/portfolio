@@ -26,6 +26,13 @@
   transition: 0.5s;
 }
 
-.show:before {
 
+
+.navbar-lewagon a {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.navbar-lewagon a:hover {
+  opacity: 1;
 }

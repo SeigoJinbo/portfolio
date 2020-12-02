@@ -1,1 +1,89 @@
 // Specific CSS for your home-page
+
+@import "../components/index.scss";
+@import "projects.scss";
+
+body {
+  background-color: white;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h1, h2, h3{
+  color: #263D42;
+  font-family: 'Anton', sans-serif;
+}
+
+.main {
+  background-color: white;
+  border-radius: 8px;
+}
+
+.intro {
+  text-align: center;
+  margin-top: 300px;
+}
+
+// shibuy street  https://tokyoessentials.com/wp-content/uploads/2013/07/shinjuku-neon-lights-1170x752.jpg
+// london graffiti https://streetsonart.com/wp-content/uploads/2014/07/Stinkfish-takes-his-street-art-to-London-to-create-this-briliant-portrait-of-a-woman.jpg
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  // padding-bottom: 1000px;
+  // background: url(../../assets/images/bg.jpg);
+  background: url(https://streetsonart.com/wp-content/uploads/2014/07/Stinkfish-takes-his-street-art-to-London-to-create-this-briliant-portrait-of-a-woman.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+section:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../assets/images/splash.jpg);
+  background-size:1800px;
+  background-position: center;
+  mix-blend-mode: screen;
+
+}
+
+section {
+  h2 {
+    // text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+     }
+  .about-text {
+    position: absolute;
+    top: 120px;
+    right: 10px;
+    text-align: right;
+
+  }
+}
+
+
+
+.links {
+  display: flex;
+  justify-content: center;
+    i {
+      padding: 8px;
+      color: #263D42;
+      }
+
+}
+    .links :hover {
+      color: #C8D6AF;
+      transition: 300ms;
+    }
+
+
+

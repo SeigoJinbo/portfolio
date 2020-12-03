@@ -3,8 +3,6 @@
   h2 { text-align: center; }
   padding-top: 36px;
   border-top: 1px solid grey;
-
-
 }
 
 
@@ -13,7 +11,6 @@
   margin: 12px;
   // border-top: 1px solid grey;
   border-bottom: 1px solid grey;
-
 }
 .iru-contents{
   // display: flex;
@@ -22,13 +19,9 @@
     border-radius: 4px;
     box-shadow: 0px 0px 8px grey;
   }
-
-
 }
-
 .iru-description {
   width: 360px;
-
 }
 
 .beats {
@@ -51,7 +44,7 @@
 
 
 .icons {
-  height: 100px;
+   padding: 4px;
 }
 
 @media only screen and (max-width: 1600px) {

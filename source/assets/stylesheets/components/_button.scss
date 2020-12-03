@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'brush';
+  src: asset_url('../../images/SKYBRUSH.ttf');
+  }
+
 .button {
   position: relative;
   display: inline-block;
@@ -8,7 +13,18 @@
   text-decoration: none !important;
   font-weight: 600;
   font-size: 20px;
+  transition: 0.5s;
 }
+
+.button:hover{
+  // border: 2px solid #1a90fa;
+  // transition: 0.5s;
+  color: #1a90fa;
+  // border-radius: 45%;
+  // font-size: 24px;
+  // padding: 12px 24.5px;
+}
+
 .button:before {
   content: '';
   position: absolute;
@@ -23,6 +39,7 @@
 }
 .button:hover:before {
   transform: scaleY(0);
+
 }
 .button:after {
   content: '';
@@ -34,9 +51,11 @@
   background: #fff;
   transition: 0.5s ease-in-out;
   transform: scaleX(1);
+
 }
 .button:hover:after {
   transform: scaleX(0);
+
 }
 .button span {
   position: relative;
@@ -68,6 +87,8 @@
 
 .paint-box a:hover {
   color: #fff;
+  // font-family: 'Nanum Brush Script', cursive;
+  // transition-delay: 1s;
 }
 
 .paint-box a:before {

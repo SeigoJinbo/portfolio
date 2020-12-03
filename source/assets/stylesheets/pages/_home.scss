@@ -2,7 +2,13 @@
 
 @import "../components/index.scss";
 @import "projects.scss";
+#test {
+  font-family: 'brush';
+}
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: white;
 }
@@ -70,25 +76,14 @@ section {
     top: 120px;
     right: 10px;
     text-align: right;
+    font-size: 18px;
+     font-family: 'Nanum Brush Script', cursive;
 
   }
 }
 
 
 
-.links {
-  display: flex;
-  justify-content: center;
-    i {
-      padding: 8px;
-      color: #263D42;
-      }
-
-}
-    .links :hover {
-      color: #C8D6AF;
-      transition: 300ms;
-    }
 
 
 

@@ -33,6 +33,19 @@
     </script>
     <script type="text/javascript">
 
+
+
+      $(document).on('click', (event) => {
+        console.log(event.target.classList.value);
+        // event.preventDefault();
+        if (event.target.classList.value != 'nav-box'){
+        // if (document.getElementById('toggle').checked == true){
+          document.getElementById('toggle').checked = false;
+        }
+        else { document.getElementById('toggle').checked = true; }
+      })
+
+
       $(document).ready(function(){
 
         $(window).scroll(function(){
@@ -45,7 +58,7 @@
             $('.navbar-lewagon').addClass('show');
           }
 
-          if($(document).height() - $(this).height() - $(this).scrollTop()){
+          if($(document).height() - $(this).height() - $(this).scrollTop() > 120){
             $('.navbar-bottom').removeClass('bottom-show');
             $('.navbar-bottom').addClass('bottom-hidden');
           }

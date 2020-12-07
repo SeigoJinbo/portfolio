@@ -2,7 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
 @font-face {
   font-family: 'brush';
-  src: asset_url('../../images/SKYBRUSH.ttf');
+  src: asset_url('../../fonts/skybrush/SKYBRUSH.ttf') format('truetype');
+  }
+  @font-face {
+  font-family: "street";
+  src: font-url('Street Wars Demo.ttf') format('truetype');
   }
 // Define fonts for body and headers
 $body-font: "Work Sans", "Helvetica", "sans-serif";

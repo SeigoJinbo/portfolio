@@ -1,3 +1,4 @@
+# config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/
 # General config
 # http://localhost:4567/__middleman
 

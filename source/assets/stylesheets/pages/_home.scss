@@ -2,8 +2,16 @@
 
 @import "../components/index.scss";
 @import "projects.scss";
-#test {
-  font-family: 'brush';
+@import "phone.scss";
+@import "../config/fonts.scss";
+
+  // @font-face {
+  // font-family: 'street';
+  // src: url('../../fonts/street_wars/Street Wars Demo.ttf') format('truetype');
+  // }
+
+.test h7{
+  font-family: "street" !important;
 }
 
 html {
@@ -11,11 +19,6 @@ html {
 }
 body {
   background-color: white;
-}
-
-.dark {
-  background-color: black;
-  transition: 0.5s;
 }
 
 h1 {
@@ -26,6 +29,9 @@ h1, h2, h3{
   color: #263D42;
   font-family: 'Anton', sans-serif;
 }
+h5 {
+  color: #f441a5;
+}
 
 .main {
   // background-color: white;
@@ -34,23 +40,25 @@ h1, h2, h3{
 
 .intro {
   text-align: center;
-  margin-top: 300px;
+
 }
 
 // shibuy street  https://tokyoessentials.com/wp-content/uploads/2013/07/shinjuku-neon-lights-1170x752.jpg
 // london graffiti https://streetsonart.com/wp-content/uploads/2014/07/Stinkfish-takes-his-street-art-to-London-to-create-this-briliant-portrait-of-a-woman.jpg
-section {
+.splat {
   position: relative;
   width: 100%;
   min-height: 100vh;
   // padding-bottom: 1000px;
   // background: url(../../assets/images/bg.jpg);
-  background: url(https://streetsonart.com/wp-content/uploads/2014/07/Stinkfish-takes-his-street-art-to-London-to-create-this-briliant-portrait-of-a-woman.jpg);
+  // background: url(https://streetsonart.com/wp-content/uploads/2014/07/Stinkfish-takes-his-street-art-to-London-to-create-this-briliant-portrait-of-a-woman.jpg);
+  background: url(../../assets/images/about1.jpg);
+
   background-size: cover;
   background-position: center;
 }
 
-section:before {
+.splat:before {
   content: '';
   position: absolute;
   top: 0;
@@ -64,23 +72,170 @@ section:before {
 
 }
 
-section {
+.splat {
   h2 {
     // text-align: center;
     position: absolute;
     top: 20px;
     left: 20px;
      }
+
   .about-text {
     position: absolute;
     top: 120px;
     right: 10px;
     text-align: right;
     font-size: 18px;
-     font-family: 'Nanum Brush Script', cursive;
+    font-family: 'Nanum Brush Script', cursive;
+    a {text-decoration: none; color: red}
+  }
 
+    .about-text-2 {
+    position: absolute;
+    bottom: 200px;
+    right: 36px;
+    text-align: right;
+    text-shadow: 2px 2px black;
+    font-size: 24px;
+    color: white;
+    font-family: 'Nanum Brush Script', cursive;
+    a {text-decoration: none; color: orange}
   }
 }
+
+
+// .dark {
+//   background-color: black;
+//   transition: 0.5s;
+//   h2, h3, h4, h5, p {
+//     color: white;
+//     font-family: monospace;
+//   }
+//   .navbar-lewagon a {color:red;}
+//   .button:before, .button:after {background:black;}
+//   .button {color: green; border: 2px solid green;}
+// }
+
+
+.contact-frame{
+
+  h2 { position: absolute; top: 10px; }
+}
+
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea{
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid;
+}
+
+.form-group textarea {
+  height: 250px;
+}
+.form-button {
+    position: relative;
+    left: 100px;
+    bottom: 40px;
+    transform: translate(-50%, 50%);
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    border: 1px solid white;
+    color: white;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 2400%;
+    z-index: 1;
+}
+
+.form-button:hover {
+  animation: animate 8s linear infinite;
+  background-size: 400%;
+  transition: 1s;
+}
+
+
+.form-button:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 1s;
+}
+
+.form-button:hover:before{
+  filter:blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+  0% {background-position: 0%;}
+  100% {background-position: 400%;}
+
+}
+
+
+
+
+
+
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: green;
+  animation: status 4s ease forwards;
+}
+
+
+@keyframes status{
+  0%{
+    opacity: 1;
+    pointer-events: all;
+  }
+
+    90%{
+    opacity: 1;
+    pointer-events: all;
+  }
+
+    100%{
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

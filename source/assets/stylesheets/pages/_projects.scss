@@ -3,6 +3,7 @@
   h2 { text-align: center; }
   padding-top: 36px;
   border-top: 1px solid grey;
+
 }
 
 
@@ -26,7 +27,7 @@
 
 .beats {
   padding: 48px;
-  margin: 12px;
+  margin: 12px 12px 0px 12px;
   border-bottom: 1px solid grey;
 }
 .beats-contents {
@@ -47,16 +48,63 @@
    padding: 4px;
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (min-width: 900px) and (max-width: 1800px) {
+  label{
+    display: none;
+  }
+  .small-nav {display: none}
+  .intro {
+  text-align: center;
+  margin-top: 300px;
+}
+
+  .about-text-2 {display: none;}
+
   .iru-contents, .beats-contents {
     img {
     width: 580px;
     height: 360px;
     }
   }
+
+#contact {
+    padding-bottom: 160px;
+}
+.contact-frame {
+  margin: auto;
+  // border: 2px solid black;
+  position: relative;
+  width: 80%;
+  height: 657px;
+  // min-height: 75vh;
+  background: url(../../assets/images/form5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-box {
+  position: absolute;
+  top: 14%;
+  left: 22.2%;
+  width: 56%;
+  height: 75.8%;
+  background: white;
+  border-radius: 4px;
+}
+
 }
 
 @media only screen and (max-width: 1200px) {
+  label{
+    display: none;
+  }
+  .small-nav {display: none}
+  .intro {
+  text-align: center;
+  margin-top: 300px;
+}
+
+
   .iru-contents, .beats-contents {
     img {
     width: 400px;
@@ -65,11 +113,3 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .iru-contents, .beats-contents {
-    img {
-    width: 300px;
-    height: 180px;
-    }
-  }
-}

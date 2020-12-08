@@ -5,13 +5,13 @@
 @import "phone.scss";
 @import "../config/fonts.scss";
 
-  // @font-face {
-  // font-family: 'street';
-  // src: url('../../fonts/street_wars/Street Wars Demo.ttf') format('truetype');
-  // }
+// @font-face {
+// font-family: 'street';
+// src: url('../../fonts/street_wars/Street Wars Demo.ttf') format('truetype');
+// }
 
-.test h7{
-  font-family: "street" !important;
+.test h7 {
+  font-family: "hipster" !important;
 }
 
 html {
@@ -25,9 +25,11 @@ h1 {
   font-size: 72px;
 }
 
-h1, h2, h3{
-  color: #263D42;
-  font-family: 'Anton', sans-serif;
+h1,
+h2,
+h3 {
+  color: #263d42;
+  font-family: "Anton", sans-serif;
 }
 h5 {
   color: #f441a5;
@@ -40,45 +42,39 @@ h5 {
 
 .intro {
   text-align: center;
-
 }
 
-// shibuy street  https://tokyoessentials.com/wp-content/uploads/2013/07/shinjuku-neon-lights-1170x752.jpg
-// london graffiti https://streetsonart.com/wp-content/uploads/2014/07/Stinkfish-takes-his-street-art-to-London-to-create-this-briliant-portrait-of-a-woman.jpg
 .splat {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  // padding-bottom: 1000px;
-  // background: url(../../assets/images/bg.jpg);
-  // background: url(https://streetsonart.com/wp-content/uploads/2014/07/Stinkfish-takes-his-street-art-to-London-to-create-this-briliant-portrait-of-a-woman.jpg);
   background: url(../../assets/images/about1.jpg);
-
   background-size: cover;
   background-position: center;
 }
 
 .splat:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: url(../../assets/images/splash.jpg);
-  background-size:1800px;
+  background-size: 1800px;
   background-position: center;
   mix-blend-mode: screen;
-
 }
 
 .splat {
   h2 {
     // text-align: center;
     position: absolute;
+    font-family: "silver";
+    font-size: 60px;
     top: 20px;
     left: 20px;
-     }
+  }
 
   .about-text {
     position: absolute;
@@ -86,11 +82,14 @@ h5 {
     right: 10px;
     text-align: right;
     font-size: 18px;
-    font-family: 'Nanum Brush Script', cursive;
-    a {text-decoration: none; color: red}
+    font-family: "Nanum Brush Script", cursive;
+    a {
+      text-decoration: none;
+      color: red;
+    }
   }
 
-    .about-text-2 {
+  .about-text-2 {
     position: absolute;
     bottom: 200px;
     right: 36px;
@@ -98,11 +97,13 @@ h5 {
     text-shadow: 2px 2px black;
     font-size: 24px;
     color: white;
-    font-family: 'Nanum Brush Script', cursive;
-    a {text-decoration: none; color: orange}
+    font-family: "Nanum Brush Script", cursive;
+    a {
+      text-decoration: none;
+      color: orange;
+    }
   }
 }
-
 
 // .dark {
 //   background-color: black;
@@ -116,43 +117,51 @@ h5 {
 //   .button {color: green; border: 2px solid green;}
 // }
 
-
-.contact-frame{
-
-  h2 { position: absolute; top: 10px; }
+// .contact-frame {
+//   h2 {
+//     position: absolute;
+//     top: 10px;
+//   }
+// }
+#contact {
+  margin-top: 36px;
+  h2 {
+    font-family: "silver";
+    font-size: 60px;
+  }
 }
-
 .form-group {
   width: 100%;
   margin-top: 20px;
+  margin-bottom: 0;
   font-size: 20px;
 }
 
 .form-group input,
-.form-group textarea{
+.form-group textarea {
   width: 100%;
-  padding: 5px;
+  // padding: 5px;
   font-size: 18px;
   border: 1px solid;
 }
 
 .form-group textarea {
-  height: 250px;
+  // height: 250px;
 }
 .form-button {
-    position: relative;
-    left: 100px;
-    bottom: 40px;
-    transform: translate(-50%, 50%);
-    width: 200px;
-    height: 60px;
-    text-align: center;
-    border: 1px solid white;
-    color: white;
-    border-radius: 30px;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-    background-size: 2400%;
-    z-index: 1;
+  position: relative;
+  left: 100px;
+  bottom: 40px;
+  transform: translate(-50%, 50%);
+  width: 200px;
+  height: 56px;
+  text-align: center;
+  border: 1px solid white;
+  color: white;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 2400%;
+  z-index: 1;
 }
 
 .form-button:hover {
@@ -161,9 +170,8 @@ h5 {
   transition: 1s;
 }
 
-
 .form-button:before {
-  content: '';
+  content: "";
   position: absolute;
   top: -5px;
   left: -5px;
@@ -178,22 +186,20 @@ h5 {
   transition: 1s;
 }
 
-.form-button:hover:before{
-  filter:blur(20px);
+.form-button:hover:before {
+  filter: blur(20px);
   opacity: 1;
   animation: animate 8s linear infinite;
 }
 
 @keyframes animate {
-  0% {background-position: 0%;}
-  100% {background-position: 400%;}
-
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
 }
-
-
-
-
-
 
 #status {
   width: 90%;
@@ -208,37 +214,33 @@ h5 {
   animation: status 4s ease forwards;
 }
 
-
-@keyframes status{
-  0%{
+@keyframes status {
+  0% {
     opacity: 1;
     pointer-events: all;
   }
 
-    90%{
+  90% {
     opacity: 1;
     pointer-events: all;
   }
 
-    100%{
+  100% {
     opacity: 0;
     pointer-events: none;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.splat2:before {
+  content: "";
+  position: absolute;
+  top: 20;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../assets/images/splash5.jpg);
+  background-size: 1800px;
+  background-position: 50% 12%;
+  mix-blend-mode: screen;
+  z-index: -1;
+}

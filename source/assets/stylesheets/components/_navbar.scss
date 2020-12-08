@@ -7,7 +7,7 @@
   z-index: 20;
   a {
     font-size: 20px;
-    }
+  }
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -38,22 +38,21 @@
   opacity: 1;
 }
 
-
 .navbar-bottom {
   width: 100%;
   display: flex;
   justify-content: center;
-  bottom: 10px;
+  bottom: 40px;
   left: 0;
   position: fixed;
   z-index: 20;
   i {
     padding: 8px;
-    color: #263D42;
-    }
+    color: #eeeeee;
+  }
 }
 .navbar-bottom :hover {
-  color: #C8D6AF;
+  color: #c8d6af;
   transition: 300ms;
 }
 

@@ -5,8 +5,6 @@
     <a href="#projects">projects</a>
     <a href="#contact">contact</a>
   </div>
-
-
   <div class="small-nav">
     <label class='nav-box' for="toggle">&#9776</label>
     <input type="checkbox" id="toggle" />
@@ -17,56 +15,39 @@
       <a href="#contact">Contact</a>
     </div>
   </div>
-
-
   <div class="intro">
     <div class="test">
       <h7>test</h7>
     </div>
     <h1>Seigo Jinbo</h1>
     <h3>Full Stack Web Developer</h3>
-
-    <label for="toggle">&#9776</label>
+    <!-- <label for="toggle">&#9776</label> -->
     <div class="paint-box">
       <a class='button-0' href="#about"><span>About</span></a>
       <a class='button-0' href="#projects"><span>Projects</span></a>
       <a class='button-0' href="#contact"><span>Contact</span></a>
     </div>
   </div>
-
   <div id="about">
     <section class="splat">
       <h2>About Me</h2>
-
       <div class="about-text align-items-end">
         <p>Hi. I'm a programmer. I like math and puzzles.</p>
         <p>I guess I like art and design, too </p>
         <a href="about">learn more</a>
       </div>
-      <div class="about-text-2 align-items-end">
-        <p>Hi. I'm a programmer. I like math and puzzles.</p>
-        <p>I guess I like art and design, too </p>
-        <a href="about">learn more</a>
-      </div>
-
     </section>
   </div>
-
   <div id="projects">
     <h2>Projects</h2>
-
-
     <div class="iru">
       <h3 class="d-flex justify-content-right">Iru</h3>
       <h5>Lead Developer + Backend</h5>
-
-      <div class="iru-contents row">
-        <div class="lg-col-8 sm-col-12">
-          <%= image_tag "iru_home.png", alt: "alttext" %>
+      <div class="iru-contents">
+        <div class="iru-image">
+          <%= image_tag "iru_home.png", alt: "alttext", class: "iru-pic"%>
         </div>
-        <div class="iru-description lg-col-4 sm-col-12 pl-4">
-
-          <!-- <p>CleverCloset is a web application that helps reduce your impact on the environment by bringing awareness to the clothes that you already own, donating your unused clothes, and lending and borrowing clothes with your friends. You can also have fun making looks for yourself and for your friends. My team and I completed this project in two weeks.</p> -->
+        <div class="iru-description">
           <p>Iru is a web application that promotes community activity and growth by connecting non-profit organizations
             with crowd funding, donations and volunteers. Features includes geocoded map locations and stripe credit
             payment. </p>
@@ -83,18 +64,16 @@
             <i class="devicon-heroku-plain-wordmark colored fa-2x"></i>
           </div>
         </div>
-
-
       </div>
-
     </div>
-
     <div class="beats">
       <h3>Foxy Beats</h3>
       <h5>Lead Developer + Backend</h5>
-      <div class="beats-contents row">
-        <div class="beats-description lg-col-4 sm-col-12 order-sm-2 order-xs-2 order-lg-1 pr-4">
-          <!-- <p>CleverCloset is a web application that helps reduce your impact on the environment by bringing awareness to the clothes that you already own, donating your unused clothes, and lending and borrowing clothes with your friends. You can also have fun making looks for yourself and for your friends. My team and I completed this project in two weeks.</p> -->
+      <div class="beats-contents">
+        <div class="">
+          <%= image_tag "foxy_beats.png", alt: "alttext"%>
+        </div>
+        <div class="beats-description">
           <p>Tired of listening to music for free on the internet? Foxy Beats is a market place for vinyl record
             rentals. Ship your old records to strangers to earn some cash, hopefully it returns in the same condition!
             Completed in a small team in one week </p>
@@ -111,14 +90,9 @@
             <i class="devicon-heroku-plain-wordmark colored fa-2x"></i>
           </div>
         </div>
-
-        <div class="lg-col-8 sm-col-12 order-lg-2 order-sm-1 ">
-          <%= image_tag "foxy_beats.png", alt: "alttext", width: 600, height: 340%>
-        </div>
       </div>
     </div>
   </div>
-
   <div id="contact">
     <div class="contact-frame">
       <h2>Contact</h2>
@@ -128,25 +102,22 @@
           <div class="form-group">
             <label for="Name" class="label">Your name</label>
             <div class="input-group">
-              <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+              <input type="text" id="Name" name="Name" class="form-control" value="name" required>
             </div>
           </div>
-
           <div class="form-group">
             <label for="Email" class="label">Your email address</label>
             <div class="input-group">
-              <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+              <input type="email" id="Email" name="Email" class="form-control" value="email" required>
             </div>
           </div>
-
           <div class="form-group">
             <label for="Message" class="label">Your message</label>
             <div class="input-group">
-              <textarea id="Message" name="Message" class="fcf-form-control" rows="4" maxlength="3000"
-                required></textarea>
+              <textarea id="Message" name="Message" class="form-control" rows="4" value="message" maxlength="3000"
+                required>message</textarea>
             </div>
           </div>
-
           <div class="form-group d-flex justify-content-end">
             <button type="submit" id="form-button" class="form-button">Send Message</button>
           </div>
@@ -155,20 +126,16 @@
       <!-- <div id="status" class="success">Success</div> -->
       <!-- </section> -->
     </div>
-
     <script src="assets/javascripts/index.js"></script>
   </div>
 </div>
 <section class="splat2">
-
 </section>
-<div class="navbar-bottom">
+<div class="navbar-bottom bottom-hidden">
   <a href="mailto:seigojinbo@gmail.com"><i class="far fa-envelope fa-2x"></i></a>
   <a href="https://www.linkedin.com/in/seigojinbo"><i class="fab fa-linkedin fa-2x"></i></a>
   <a href="'https://github.com/SeigoJinbo'"><i class="fab fa-github fa-2x"></i></a>
 </div>
-
-
 <!--   <div class="icons">
     <i class="devicon-html5-plain"></i>
     <i class="devicon-html5-plain-wordmark"></i>

@@ -13,8 +13,6 @@
   border-bottom: 1px solid grey;
 }
 .iru-contents {
-  // display: flex;
-  // justify-content: space-between;
   img {
     border-radius: 4px;
     box-shadow: 0px 0px 8px grey;
@@ -38,15 +36,15 @@
   }
 }
 
-.beats-description {
-  width: 360px;
-}
+// .beats-description {
+//   width: 360px;
+// }
 
 .icons {
   padding: 4px;
 }
-
-@media only screen and (min-width: 900px) and (max-width: 1800px) {
+// @media only screen and (min-width: 900px) and (max-width: 1800px) {
+@media only screen and (min-width: 900px) {
   label {
     display: none;
   }
@@ -58,15 +56,38 @@
     margin-top: 300px;
   }
 
-  .about-text-2 {
-    display: none;
+  .splat {
+    h2 {
+      // text-align: center;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .about-text {
+      position: absolute;
+      top: 120px;
+      right: 10px;
+      text-align: right;
+      font-size: 18px;
+      font-family: "Nanum Brush Script", cursive;
+      a {
+        text-decoration: none;
+        color: red;
+      }
+    }
   }
 
   .iru-contents,
   .beats-contents {
+    display: flex;
+    justify-content: space-around;
     img {
-      width: 580px;
-      height: 360px;
+      width: 30vw;
+    }
+    .iru-description,
+    .beats-description {
+      width: 30vw;
     }
   }
 
@@ -94,26 +115,26 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  label {
-    display: none;
-  }
-  .small-nav {
-    display: none;
-  }
-  .intro {
-    text-align: center;
-    margin-top: 300px;
-  }
+// @media only screen and (max-width: 1200px) {
+//   label {
+//     display: none;
+//   }
+//   .small-nav {
+//     display: none;
+//   }
+//   .intro {
+//     text-align: center;
+//     margin-top: 300px;
+//   }
 
-  .iru-contents,
-  .beats-contents {
-    img {
-      width: 400px;
-      height: 220px;
-    }
-  }
-  .splat2 {
-    background-size: cover;
-  }
-}
+//   // .iru-contents,
+//   // .beats-contents {
+//   //   img {
+//   //     width: 400px;
+//   //     height: 220px;
+//   //   }
+//   // }
+//   .splat2 {
+//     background-size: cover;
+//   }
+// }

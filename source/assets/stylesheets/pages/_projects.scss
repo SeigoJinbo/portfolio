@@ -7,44 +7,36 @@
 }
 
 .iru {
-  padding: 48px;
   margin: 12px;
-  // border-top: 1px solid grey;
   border-bottom: 1px solid grey;
 }
+
 .iru-contents {
   img {
     border-radius: 4px;
     box-shadow: 0px 0px 8px grey;
   }
 }
-.iru-description {
-  width: 360px;
-}
+// .iru-description {
+//   width: 360px;
+// }
 
 .beats {
-  padding: 48px;
   margin: 12px 12px 0px 12px;
   border-bottom: 1px solid grey;
 }
 .beats-contents {
-  // display: flex;
-  // justify-content: space-between;
   img {
     border-radius: 4px;
     box-shadow: 0px 0px 8px grey;
   }
 }
 
-// .beats-description {
-//   width: 360px;
-// }
-
 .icons {
   padding: 4px;
 }
 // @media only screen and (min-width: 900px) and (max-width: 1800px) {
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1000px) {
   label {
     display: none;
   }
@@ -81,6 +73,7 @@
   .iru-contents,
   .beats-contents {
     display: flex;
+    // border: 1px solid black;
     justify-content: space-around;
     img {
       width: 30vw;

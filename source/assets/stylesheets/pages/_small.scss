@@ -49,11 +49,9 @@
   #toggle:checked + .menu {
     display: block;
   }
-
   .intro {
     margin-top: 120px;
   }
-
   .paint-box {
     min-height: 60vh;
     display: flex;
@@ -119,7 +117,7 @@
 
     .about-text {
       position: absolute;
-      bottom: 200px;
+      bottom: 20%;
       right: 36px;
       text-align: right;
       text-shadow: 2px 2px black;
@@ -133,32 +131,14 @@
     }
   }
 
-  .iru-contents,
-  .beats-contents {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    img {
-      width: 70vw;
-      margin: 12px 0 24px 0;
-    }
-    .iru-description,
-    .beats-description {
-      width: 70vw;
-    }
-    .project-buttons {
-      justify-content: center;
-    }
-  }
-
-  .contact-box {
+  s .contact-box {
     width: 88.6%;
     height: 57%;
     background: white;
     border-radius: 4px;
     margin: 0 auto -20px auto;
     padding: 0px 26px 0px 26px;
+    // opacity: 0;
     label {
       display: none;
     }

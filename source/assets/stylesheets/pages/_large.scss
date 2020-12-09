@@ -1,0 +1,57 @@
+@media only screen and (min-width: 1000px) {
+  label {
+    display: none;
+  }
+  .small-nav {
+    display: none;
+  }
+  .intro {
+    text-align: center;
+    margin-top: 300px;
+  }
+
+  .splat {
+    h2 {
+      // text-align: center;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .about-text {
+      position: absolute;
+      top: 120px;
+      right: 10px;
+      text-align: right;
+      font-size: 18px;
+      font-family: "Nanum Brush Script", cursive;
+      a {
+        text-decoration: none;
+        color: red;
+      }
+    }
+  }
+
+  #contact {
+    padding-bottom: 0px;
+  }
+
+  .contact-box {
+    width: 45.6%;
+    height: 52%;
+    margin: 0 auto -20px auto;
+    padding: 0px 26px 0px 26px;
+    border-radius: 4px;
+    z-index: 10;
+  }
+  .splat2 {
+    margin-top: -40px;
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    background: url(https://streetsonart.com/wp-content/uploads/2014/07/Stinkfish-takes-his-street-art-to-London-to-create-this-briliant-portrait-of-a-woman.jpg);
+    background-size: cover;
+    background-position: top;
+    z-index: -2;
+  }
+}

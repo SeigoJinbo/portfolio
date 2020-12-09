@@ -1,4 +1,8 @@
+// .projects {
+//   background-color: gray;
+// }
 #projects {
+  background-color: $background2;
   h2 {
     text-align: center;
   }
@@ -8,7 +12,7 @@
 
 .iru {
   margin: 12px;
-  border-bottom: 1px solid grey;
+  // border-bottom: 1px solid grey;
 }
 
 .iru-contents {
@@ -77,10 +81,13 @@
     justify-content: space-around;
     img {
       width: 30vw;
+
+      margin: auto 0;
     }
     .iru-description,
     .beats-description {
       width: 30vw;
+      margin: auto 0;
     }
   }
 

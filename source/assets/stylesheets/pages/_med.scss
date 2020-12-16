@@ -70,8 +70,10 @@
   .title-row {
     .title-col {
       display: flex;
-      flex-direction: column;
-      text-align: center;
+      justify-content: space-between;
+      width: 400px;
+      //   flex-direction: column;
+      //   text-align: center;
     }
     display: flex;
     justify-content: space-between;
@@ -107,8 +109,10 @@
   .title-row {
     .title-col {
       display: flex;
-      flex-direction: column;
-      text-align: center;
+      justify-content: space-between;
+      width: 500px;
+      //   flex-direction: column;
+      //   text-align: center;
     }
     display: flex;
     justify-content: space-between;

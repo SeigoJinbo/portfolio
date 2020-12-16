@@ -21,7 +21,7 @@
 .hide {
   opacity: 0;
   transition: 0.5s;
-  left: -60px;
+  top: -60px;
 }
 
 .show {
@@ -66,4 +66,71 @@
   opacity: 1;
   transition: 0.5s;
   transition-delay: 0.35s;
+}
+
+header {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0px;
+  background-color: rgb(106, 236, 95);
+  transition: 0.5s;
+  // background: linear-gradient(rgb(43, 43, 43), black);
+  z-index: 200;
+}
+
+nav {
+  z-index: 200;
+  height: 12px;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h1,
+  ul {
+    margin-top: 40px;
+    font-size: 1rem;
+    flex: 1;
+    z-index: 200;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    color: lightgray;
+    text-decoration: none;
+  }
+}
+.hilite {
+  position: absolute;
+  z-index: -1;
+  border-radius: 8px;
+  background: linear-gradient(45deg, rgb(219, 118, 2), rgb(247, 111, 33));
+  transform: scale(2);
+  transition: all 0.5s ease;
+}
+
+.waves {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.waves svg {
+  position: relative;
+  display: block;
+  width: calc(133% + 1.3px);
+  height: 71px;
+}
+
+.waves .shape-fill {
+  fill: rgb(106, 236, 95);
+  transition: fill 0.5s;
+  box-shadow: 2px 2px 2px black;
 }

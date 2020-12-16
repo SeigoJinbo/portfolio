@@ -1,90 +1,95 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- INSERT GOOGLE ANALYTICS HERE -->
 
-    <meta charset="utf-8">
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<head>
+  <!-- INSERT GOOGLE ANALYTICS HERE -->
+  <meta charset="utf-8">
+  <!-- Always force latest IE rendering engine or request Chrome Frame -->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <!-- For Bootstrap responsiveness -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seigo Jinbo</title>
+  <!-- Comment this out when meta tags configured -->
+  <%#= display_meta_tags %>
+  <%= favicon_tag 'favicon.ico' %>
+  <%= stylesheet_link_tag "app" %>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    // $(document).on('click', (event) => {
+    //   console.log(event.target.classList.value);
+    //   // event.preventDefault();
+    //   if (event.target.classList.value != 'nav-box') {
+    //     if (document.getElementById('toggle').checked === true) {
+    //       document.getElementById('toggle').checked = false;
+    //     }
+    //     else { document.getElementById('toggle').checked = true; }
+    //   }
+    // })
 
-    <!-- For Bootstrap responsiveness -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Seigo Jinbo</title>
-    <!-- Comment this out when meta tags configured -->
-    <%#= display_meta_tags %>
-    <%= favicon_tag 'favicon.ico' %>
-    <%= stylesheet_link_tag "app" %>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
-
-
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous">
-    </script>
-    <script type="text/javascript">
-
-
-
-      $(document).on('click', (event) => {
-        console.log(event.target.classList.value);
-        // event.preventDefault();
-        if (event.target.classList.value != 'nav-box'){
-        // if (document.getElementById('toggle').checked == true){
-          document.getElementById('toggle').checked = false;
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() < 800) {
+          $('header').removeClass('show');
+          $('header').addClass('hide');
         }
-        else { document.getElementById('toggle').checked = true; }
+        else {
+          $('header').removeClass('hide');
+          $('header').addClass('show');
+        }
+        if ($(document).height() - $(this).height() - $(this).scrollTop() > 120) {
+          $('.navbar-bottom').removeClass('bottom-show');
+          $('.navbar-bottom').addClass('bottom-hidden');
+        }
+        else {
+          $('.navbar-bottom').removeClass('bottom-hidden');
+          $('.navbar-bottom').addClass('bottom-show');
+        }
       })
+    })
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>Nav bar</h1>
+      <ul>
+        <li><a data-page="about" href="#about">About</a></li>
+        <li><a data-page="projects" href="#projects">Projects</a></li>
+        <li><a data-page="contact" href="#contact">Contact</a></li>
+        <div class="hilite"></div>
+      </ul>
+    </nav>
+    <div class="waves">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M 0 60 H 920 V 0 H 0 V 60 Z" opacity=".25" id="wave1" class="shape-fill">
+
+        </path>
+        <path d="M 0 87 C 323 -18 354 63 548 71 C 688 79 805 -10 1000 93 V 0 H 0 V 67 Z" opacity=".5" id="wave2"
+          class="shape-fill"></path>
+        <path d="M 0 67 C 273 183 506 -18 1000 86 V 0 H 0 V 67 Z" id="wave3" class="shape-fill">
+
+        </path>
+      </svg>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </header>
 
 
-      $(document).ready(function(){
-
-        $(window).scroll(function(){
-          if($(this).scrollTop() < 800){
-            $('.navbar-lewagon').removeClass('show');
-            $('.navbar-lewagon').addClass('hide');
-          }
-          else {
-            $('.navbar-lewagon').removeClass('hide');
-            $('.navbar-lewagon').addClass('show');
-          }
-
-          if($(document).height() - $(this).height() - $(this).scrollTop() > 120){
-            $('.navbar-bottom').removeClass('bottom-show');
-            $('.navbar-bottom').addClass('bottom-hidden');
-          }
-          else {
-            $('.navbar-bottom').removeClass('bottom-hidden');
-            $('.navbar-bottom').addClass('bottom-show');
-          }
 
 
-          // if($(this).scrollTop() > 1400){
-          //   // $('.navbar-lewagon').removeClass('show');
-          //   $('body').addClass('dark');
-          // }
-          // else {
-          //   $('body').removeClass('dark');
-          // }
-        })
+  <%= yield %>
+  <%= javascript_include_tag "bundle" %>
+</body>
 
-      })
-
-    </script>
-
-  </head>
-
-  <body>
-    <%= yield %>
-    <%= javascript_include_tag "bundle" %>
-  </body>
 </html>

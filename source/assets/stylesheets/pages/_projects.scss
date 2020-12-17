@@ -1,6 +1,36 @@
-// .projects {
-//   background-color: gray;
+#about {
+  position: relative;
+}
+.portfolio {
+  position: absolute;
+  left: -2000px;
+  top: 25%;
+  // transform: scaleY(0.01);
+  height: 1vh;
+  width: 100%;
+  background: rgb(44, 43, 43);
+}
+// .hidden {
+//   // left: -100%;
+//   // height: 0px;
+//   transition: 0.5s;
+//   transform: scaleY(0);
 // }
+
+// .appear {
+//   left: 0;
+//   height: 50%;
+//   transition: 0.5s;
+//   transform: scaleY(1);
+// }
+.port-nav {
+  background: rgb(97, 96, 96);
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 #projects {
   background-color: $background2;
   h2 {

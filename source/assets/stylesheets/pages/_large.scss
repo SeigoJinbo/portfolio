@@ -2,9 +2,7 @@
   label {
     display: none;
   }
-  .small-nav {
-    display: none;
-  }
+
   .intro {
     text-align: center;
     margin-top: 300px;
@@ -19,9 +17,11 @@
     }
 
     .about-text {
+      color: white;
+      text-shadow: 1px 1px 0px black;
       position: absolute;
-      top: 120px;
-      right: 10px;
+      top: 55%;
+      right: 9%;
       text-align: right;
       font-size: 18px;
       font-family: "Nanum Brush Script", cursive;

@@ -164,6 +164,42 @@
     background-position: top;
     z-index: -2;
   }
+  .label {
+    position: absolute;
+    top: 13%;
+    font-family: monospace;
+    background: black;
+    padding: 4px;
+    color: white;
+    width: 22ch;
+  }
+  .type {
+    margin-bottom: 0 !important;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    animation: type 3s steps(21) 1s 1 normal both,
+      blinkTextCursor 800ms steps(21) infinite normal;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  @keyframes type {
+    0% {
+      width: 0ch;
+    }
+    100% {
+      width: 21ch;
+    }
+  }
+
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+
   #proj-silver {
     position: absolute;
     top: 35%;
@@ -173,6 +209,7 @@
   #proj-silver:hover {
     filter: invert(1) drop-shadow(5px 5px 0px rgb(217, 3, 206));
   }
+
   #contact-silver {
     display: none;
     position: absolute;
@@ -192,12 +229,65 @@
     --neon-text-color: blue;
     --neon-border-color: red;
   }
-
-  .neon {
-    // display: none;
+  .contact {
     position: absolute;
     top: 15%;
     right: 13%;
+    #mail,
+    #linked,
+    #git {
+      padding: 15px;
+      transition: 0.5s;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      opacity: 0;
+      color: #555;
+    }
+  }
+
+  .contact:hover {
+    #mail {
+      transition: 0.5s;
+
+      position: absolute;
+      top: -78%;
+      right: -32%;
+      opacity: 1;
+    }
+    #linked {
+      transition: 0.5s;
+      position: absolute;
+      top: -12%;
+      right: -40%;
+      opacity: 1;
+    }
+    #git {
+      transition: 0.5s;
+      position: absolute;
+      top: 55%;
+      right: -35%;
+      opacity: 1;
+    }
+  }
+  #mail i:hover {
+    color: #f00;
+    text-shadow: 0 0 15px #f00;
+  }
+  #linked i:hover {
+    color: #00f3ff;
+    text-shadow: 0 0 15px #00f3ff;
+  }
+  #git i:hover {
+    color: #0f0;
+    text-shadow: 0 0 15px #0f0;
+  }
+  .neon {
+    // display: none;
+    // position: absolute;
+    // top: 15%;
+    // right: 13%;
     font-size: 2rem;
     padding: 8px;
     color: rgb(129, 129, 129);

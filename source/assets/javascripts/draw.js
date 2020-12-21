@@ -44,12 +44,12 @@ function scrollAnimTriggerCheck(evt) {
       }, 3300);
     }
     for (let i = 0; i < aboutLetters.length; i++) {
-      aboutLetters[i].beginElementAt(parseFloat(`${i}` * 0.3));
+      aboutLetters[i].beginElementAt(parseFloat(`${i}` * 0.15));
       setTimeout(() => {
         aboutFill.forEach(function (letter) {
           letter.beginElement();
         });
-      }, 3300);
+      }, 2500);
     }
 
     setInterval(() => {

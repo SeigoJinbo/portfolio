@@ -23,6 +23,10 @@ const contactFill = document.querySelectorAll(".contact-fill");
 const aboutLetters = document.querySelectorAll(".about-letter");
 const aboutFill = document.querySelectorAll(".about-fill");
 
+const mail = document.querySelector(".fa-envelope");
+const linked = document.querySelector(".fa-linkedin");
+const git = document.querySelector(".fa-github");
+
 // function scrollAnimTriggerCheck(evt) {
 //   var viewBottom = window.scrollY + window.innerHeight + 1000;
 //   if (viewBottom > offsetToTriggerAnimation) {
@@ -89,6 +93,16 @@ window.onload = (event) => {
   setInterval(() => {
     neon.classList.add("on");
   }, 3500);
+
+  setInterval(() => {
+    mail.classList.add("mail-light");
+  }, 3500);
+  setInterval(() => {
+    linked.classList.add("linked-light");
+  }, 3500);
+  setInterval(() => {
+    git.classList.add("git-light");
+  }, 4500);
 };
 
 // Add an event handler to the document for the "onscroll" event

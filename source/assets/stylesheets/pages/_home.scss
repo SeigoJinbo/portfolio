@@ -7,10 +7,6 @@
 @import "large.scss";
 @import "../config/fonts.scss";
 
-.test h7 {
-  font-family: "hipster" !important;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -64,117 +60,140 @@ h5 {
   mix-blend-mode: screen;
 }
 
-#contact {
-  margin-top: 36px;
-}
-.form-group {
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 0;
-  font-size: 20px;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  // padding: 5px;
-  font-size: 18px;
-  border: 1px solid;
-}
-
-.form-button {
-  position: relative;
-  left: 100px;
-  bottom: 40px;
-  transform: translate(-50%, 50%);
-  width: 200px;
-  height: 56px;
-  text-align: center;
-  border: 1px solid white;
+.label {
+  position: absolute;
+  top: 13%;
+  font-family: monospace;
+  background: black;
+  padding: 4px;
   color: white;
-  border-radius: 30px;
-  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-  background-size: 2400%;
-  z-index: 1;
+  width: 22ch;
+}
+.type {
+  margin-bottom: 0 !important;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  animation: type 3s steps(21) 1s 1 normal both,
+    blinkTextCursor 800ms steps(21) infinite normal;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.form-button:hover {
-  animation: animate 8s linear infinite;
-  background-size: 400%;
-  transition: 1s;
-}
-
-.form-button:before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  z-index: -1;
-
-  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-  background-size: 400%;
-  border-radius: 40px;
-  opacity: 0;
-  transition: 1s;
-}
-
-.form-button:hover:before {
-  filter: blur(20px);
-  opacity: 1;
-  animation: animate 8s linear infinite;
-}
-
-@keyframes animate {
+@keyframes type {
   0% {
-    background-position: 0%;
+    width: 0ch;
   }
   100% {
-    background-position: 400%;
+    width: 21ch;
   }
 }
 
-#status {
-  width: 90%;
-  max-width: 500px;
-  text-align: center;
-  padding: 10px;
-  margin: 0 auto;
-  border-radius: 8px;
-}
-#status.success {
-  background-color: green;
-  animation: status 4s ease forwards;
-}
-
-@keyframes status {
-  0% {
-    opacity: 1;
-    pointer-events: all;
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
   }
-
-  90% {
-    opacity: 1;
-    pointer-events: all;
-  }
-
-  100% {
-    opacity: 0;
-    pointer-events: none;
+  to {
+    border-right-color: transparent;
   }
 }
+.red {
+  color: rgb(240, 113, 27);
+}
+.blue {
+  color: rgb(26, 144, 250);
+}
+.yellow {
+  color: rgb(247, 203, 84);
+}
+.green {
+  color: rgb(118, 201, 40);
+}
+.purple {
+  color: rgb(175, 116, 223);
+}
+.portfolio {
+  p,
+  a,
+  h5 {
+    font-family: monospace;
+  }
+  p {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+  }
+  h5 {
+    padding: 12px;
+  }
+  i {
+    color: white;
+  }
+}
 
-.splat2:before {
-  content: "";
+.stack {
   position: absolute;
-  top: 20;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../../assets/images/splash5.jpg);
-  background-size: 1800px;
-  background-position: 50% 12%;
-  mix-blend-mode: screen;
-  z-index: -1;
+  top: 35%;
+  left: 7%;
+  #html5 {
+    position: absolute;
+    top: -48%;
+    left: -17%;
+    background: black;
+    transform: rotate(-2deg);
+  }
+  #css3 {
+    position: absolute;
+    top: -15%;
+    left: -30%;
+    background: yellow;
+    transform: rotate(-7deg);
+  }
+  #js {
+    background: rgb(158, 13, 13);
+    padding: 6px;
+    border-radius: 4px;
+    position: absolute;
+    top: 28%;
+    left: -25%;
+    transform: rotate(-4deg);
+  }
+  #rails {
+    position: absolute;
+    top: 75%;
+    left: -20%;
+    background: lightgrey;
+  }
+  #postgres {
+    position: absolute;
+    top: 100%;
+    left: -10%;
+    background: rgb(139, 255, 255);
+    transform: rotate(-2deg);
+  }
+  #heroku {
+    position: absolute;
+    top: 102%;
+    left: -37%;
+    background: pink;
+    transform: rotate(5deg);
+  }
+  #react {
+    padding: 6px;
+    background: white;
+    border: 1px solid cyan;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -37%;
+    transform: rotate(15deg);
+  }
+}
+#about-empire {
+  margin-top: -37px;
+  filter: drop-shadow(-3px -3px 0px rgba(218, 4, 142, 1));
+}
+#mail,
+#linked,
+#git {
+  color: #555;
 }

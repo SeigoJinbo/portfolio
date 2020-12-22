@@ -17,6 +17,11 @@
   font-family: "silver";
   src: font-url("Jacksilver.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "neon";
+  src: font-url("NeonPlanetDisplay.ttf") format("truetype");
+}
 // Define fonts for body and headers
 $body-font: "Work Sans", "Helvetica", "sans-serif";
 $headers-font: "Nunito", "Helvetica", "sans-serif";

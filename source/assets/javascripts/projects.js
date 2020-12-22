@@ -117,6 +117,7 @@ portLink.addEventListener("click", (event) => {
 
 const portLink2 = document.querySelector(".port-link2");
 portLink2.addEventListener("click", (event) => {
+  event.preventDefault();
   TweenMax.to(".portfolio", 0, {
     css: { display: "none" },
     delay: 0,

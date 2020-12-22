@@ -45,14 +45,14 @@ portLink.addEventListener("click", (event) => {
     ease: Circ.easeout,
   });
 
-  TweenMax.to(".port-border", 0.1, {
-    css: { background: "black" },
-    delay: 0.8,
-  });
-  TweenMax.to(".port-border", 0.1, {
-    css: { background: "white" },
-    delay: 0.9,
-  });
+  // TweenMax.to(".port-border", 0.1, {
+  //   css: { background: "black" },
+  //   delay: 0.8,
+  // });
+  // TweenMax.to(".port-border", 0.1, {
+  //   css: { background: "white" },
+  //   delay: 0.9,
+  // });
   TweenMax.to(".port-border", 0.1, {
     css: { background: "transparent" },
     delay: 0.9,

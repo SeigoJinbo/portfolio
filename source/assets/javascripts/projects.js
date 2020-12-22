@@ -47,28 +47,12 @@ portLink.addEventListener("click", (event) => {
 
   TweenMax.to(".port-border", 0.1, {
     css: { background: "black" },
-    delay: 0,
+    delay: 0.8,
   });
-  TweenMax.staggerTo(".port-border", 0.25, {
-    css: { className: "+=noise" },
-    delay: 0.1,
+  TweenMax.to(".port-border", 0.1, {
+    css: { background: "white" },
+    delay: 0.9,
   });
-  TweenMax.staggerTo(".port-border", 0.25, {
-    css: { className: "+=no-signal" },
-    delay: 0.2,
-  });
-  TweenMax.staggerTo(".port-border", 0.25, {
-    css: { className: "-=noise" },
-    delay: 0.3,
-  });
-  TweenMax.staggerTo(".port-border", 0.25, {
-    css: { className: "-=no-signal" },
-    delay: 0.4,
-  });
-  // TweenMax.to(".port-border", 0.1, {
-  //   css: { background: "white" },
-  //   delay: 0.9,
-  // });
 
   TweenMax.to(".port-border", 0.1, {
     css: { background: "transparent" },

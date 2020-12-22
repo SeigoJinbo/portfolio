@@ -111,7 +111,7 @@ portLink.addEventListener("click", (event) => {
   });
   TweenMax.staggerTo(".port-border", 0.25, {
     css: { className: "+=no-signal2" },
-    delay: 2.2,
+    delay: 2.3,
   });
 });
 

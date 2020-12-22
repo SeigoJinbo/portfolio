@@ -1,8 +1,57 @@
 // -------------------------small------------------------
 @media only screen and (max-width: 767px) {
+  .stack {
+    top: 40% !important;
+    left: 0% !important;
+    i {
+      display: none;
+    }
+  }
+  #mail {
+    position: absolute;
+    right: 3%;
+    top: 10%;
+  }
+  #linked {
+    position: absolute;
+    top: 15%;
+    right: 3%;
+  }
+  #git {
+    position: absolute;
+    top: 20%;
+    right: 3%;
+  }
+  .mail-light {
+    color: #f00;
+    text-shadow: 0 0 15px #f00;
+    transition: 0.3s;
+  }
+  .linked-light {
+    color: #00f3ff;
+    text-shadow: 0 0 15px #00f3ff;
+    transition: 0.3s;
+  }
+  .git-light {
+    color: #0f0;
+    text-shadow: 0 0 15px #0f0;
+    transition: 0.3s;
+  }
+  .more-link {
+    svg {
+      transform: scale(1.3);
+      position: absolute;
+      top: -117%;
+      right: 7%;
+    }
+  }
+
   .title-row {
-    display: flex;
+    display: block;
     justify-content: space-between;
+  }
+  .tab-content {
+    height: 500px;
   }
 
   .iru-contents,
@@ -17,7 +66,7 @@
     }
     .iru-description,
     .beats-description {
-      width: 70vw;
+      width: 80vw;
     }
     .project-buttons {
       justify-content: center;
@@ -35,6 +84,16 @@
 }
 //--------------------------med-------------------------------
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .mail-light {
+    color: #555;
+  }
+  .linked-light {
+    color: #555;
+  }
+  .git-light {
+    color: #555;
+  }
+
   .title-row {
     display: flex;
     justify-content: space-between;
@@ -67,6 +126,16 @@
 }
 //--------------------------large-------------------------------
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .mail-light {
+    color: #555;
+  }
+  .linked-light {
+    color: #555;
+  }
+  .git-light {
+    color: #555;
+  }
+
   .title-row {
     .title-col {
       display: flex;
@@ -106,6 +175,19 @@
 }
 //--------------------------xlarge-------------------------------
 @media only screen and (min-width: 1200px) {
+  .mail-light {
+    color: #555;
+  }
+  .linked-light {
+    color: #555;
+  }
+  .git-light {
+    color: #555;
+  }
+  .tab-content {
+    height: 360px;
+  }
+
   .title-row {
     .title-col {
       display: flex;

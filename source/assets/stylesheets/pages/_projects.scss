@@ -1,6 +1,90 @@
-// .projects {
-//   background-color: gray;
-// }
+#about {
+  position: relative;
+}
+.port-border {
+  display: none;
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  top: 50%;
+  left: 50%;
+  border: 2px solid rgb(0, 255, 255);
+  background: transparent;
+
+  // transform: scale(0.01);
+}
+.no-signal {
+  background: url("../images/no-signal.jpg") !important;
+  background-size: cover !important;
+}
+.no-signal2 {
+  background: url("../images/no-signal2.jpg") !important;
+  background-size: cover !important;
+}
+.noise {
+  background: url("../images/noise1.jpg") !important;
+}
+
+.portfolio {
+  display: none;
+  background-color: black;
+  // left: -2000px;
+
+  // filter: drop-shadow(0 0 1px blue);
+  width: 100%;
+}
+.nav-link {
+  height: 80px;
+  width: 120px;
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  background: linear-gradient(#949494, #363636);
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+//proj nav bar
+.port-nav {
+  background: linear-gradient(#3b3b3b, #242424);
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  .port-title {
+    width: 50%;
+    display: none;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .port-link2 {
+    padding: 4px;
+  }
+}
+//nav links
+.nav-tabs {
+  height: 80px;
+  border-bottom: none;
+  li a {
+    color: white;
+    text-align: center;
+  }
+  // width: 50%;
+  .nav-item {
+    width: 30%;
+  }
+}
+.tab-content {
+  // transform: scaleY(0);
+  transform-origin: top;
+  background: rgb(29, 28, 28);
+  color: white;
+  padding-bottom: 20px;
+  height: 300px;
+}
+
 #projects {
   background-color: $background2;
   h2 {
@@ -11,7 +95,11 @@
 }
 
 .iru {
+<<<<<<< HEAD
   margin: 12px 12px 48px 12px;
+=======
+  // margin: 12px;
+>>>>>>> de86ae6166e475d091608985c45206db2bcc293e
   // border-bottom: 1px solid grey;
 }
 
@@ -23,9 +111,13 @@
 }
 
 .beats {
+<<<<<<< HEAD
   padding-bottom: 48px;
   margin: 12px 12px 0px 12px;
   border-bottom: 1px solid grey;
+=======
+  // margin: 12px 12px 0px 12px;
+>>>>>>> de86ae6166e475d091608985c45206db2bcc293e
 }
 .beats-contents {
   img {
@@ -41,9 +133,7 @@
   label {
     display: none;
   }
-  .small-nav {
-    display: none;
-  }
+
   .intro {
     text-align: center;
     margin-top: 300px;
@@ -70,6 +160,7 @@
     }
   }
 
+<<<<<<< HEAD
   // .iru-contents,
   // .beats-contents {
   //   display: flex;
@@ -84,28 +175,169 @@
   //     margin: auto 0;
   //   }
   // }
+=======
+  .iru-contents,
+  .beats-contents {
+    display: flex;
+    // border: 1px solid black;
+    justify-content: space-around;
+    img {
+      width: 30vw !important;
+
+      margin: auto 0;
+    }
+    .iru-description,
+    .beats-description {
+      width: 30vw;
+      margin: auto 0;
+    }
+  }
+>>>>>>> de86ae6166e475d091608985c45206db2bcc293e
 
   #contact {
     padding-bottom: 0px;
   }
 
-  .contact-box {
-    width: 45.6%;
-    height: 52%;
-    margin: 0 auto -20px auto;
-    padding: 0px 26px 0px 26px;
-    border-radius: 4px;
-    z-index: 10;
+  #proj-silver {
+    filter: drop-shadow(5px 5px 0px rgba(3, 102, 217, 1));
   }
-  .splat2 {
-    margin-top: -40px;
-    position: relative;
-    width: 100%;
-    min-height: 50vh;
-    background: url(https://streetsonart.com/wp-content/uploads/2014/07/Stinkfish-takes-his-street-art-to-London-to-create-this-briliant-portrait-of-a-woman.jpg);
-    background-size: cover;
-    background-position: top;
-    z-index: -2;
+  #proj-silver:hover {
+    filter: invert(1) drop-shadow(5px 5px 0px rgb(217, 3, 206));
+  }
+
+  #contact-silver {
+    display: none;
+    position: absolute;
+    top: 60%;
+    right: 15%;
+    filter: drop-shadow(-3px -3px 0px rgba(218, 4, 142, 1));
+  }
+  #contact-silver:hover {
+    filter: invert(1) drop-shadow(3px 3px 0px rgb(217, 3, 206));
+    transition: 2s -webkit-filter linear;
+  }
+
+  :root {
+    --neon-text-color: blue;
+    --neon-border-color: red;
+  }
+  .contact {
+    position: absolute;
+    top: 15%;
+    right: 13%;
+    #mail,
+    #linked,
+    #git {
+      padding: 15px;
+      transition: 0.5s;
+      position: absolute;
+      top: 0;
+      right: 0;
+      opacity: 0;
+    }
+  }
+
+  .contact:hover {
+    #mail {
+      transition: 0.5s;
+
+      position: absolute;
+      top: -78%;
+      right: -32%;
+      opacity: 1;
+    }
+    #linked {
+      transition: 0.5s;
+      position: absolute;
+      top: -12%;
+      right: -40%;
+      opacity: 1;
+    }
+    #git {
+      transition: 0.5s;
+      position: absolute;
+      top: 55%;
+      right: -35%;
+      opacity: 1;
+    }
+  }
+  #mail i:hover {
+    color: #f00;
+    text-shadow: 0 0 15px #f00;
+  }
+  #linked i:hover {
+    color: #00f3ff;
+    text-shadow: 0 0 15px #00f3ff;
+  }
+  #git i:hover {
+    color: #0f0;
+    text-shadow: 0 0 15px #0f0;
+  }
+  .neon {
+    // display: none;
+    // position: absolute;
+    // top: 15%;
+    // right: 13%;
+    font-size: 2rem;
+    padding: 8px;
+    color: rgb(129, 129, 129);
+    border: 2px solid rgb(129, 129, 129);
+    border-radius: 2rem;
+    font-family: "neon";
+  }
+  .on {
+    // display: none;
+    color: rgb(228, 228, 228);
+    border: 2px solid rgb(228, 228, 228);
+    animation: flicker 1.5s forwards alternate;
+  }
+
+  .on::selection {
+    background-color: var(--neon-border-color);
+    color: var(--neon-text-color);
+  }
+  .on:focus {
+    outline: none;
+  }
+  .on:hover {
+    transition: 0.5s;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    text-shadow: -0.05rem -0.05rem 0.125rem #fff, 0.05rem 0.05rem 0.125rem #fff,
+      0 0 0.5rem var(--neon-text-color), 0 0 1rem var(--neon-text-color),
+      0 0 1.5rem var(--neon-text-color), 0 0 2rem var(--neon-text-color),
+      0 0 2.5rem var(--neon-text-color) !important;
+    box-shadow: 0 0 0.125rem #fff, inset 0 0 0.125rem #fff,
+      0 0 0.5rem var(--neon-border-color),
+      inset 0 0 0.5rem var(--neon-border-color),
+      0 0 2rem var(--neon-border-color), inset 0 0 1rem var(--neon-border-color) !important;
+  }
+  @keyframes flicker {
+    0%,
+    9%,
+    11%,
+    19%,
+    21%,
+    54%,
+    56%,
+    100% {
+      text-shadow: -0.05rem -0.05rem 0.25rem #fff, 0.05rem 0.05rem 0.25rem #fff,
+        0 0 0.5rem var(--neon-text-color), 0 0 1rem var(--neon-text-color),
+        0 0 1.5rem var(--neon-text-color), 0 0 2rem var(--neon-text-color),
+        0 0 2.5rem var(--neon-text-color);
+
+      box-shadow: 0 0 0.125rem #fff, inset 0 0 0.125rem #fff,
+        0 0 0.5rem var(--neon-border-color),
+        inset 0 0 0.5rem var(--neon-border-color),
+        0 0 1rem var(--neon-border-color),
+        inset 0 0 1rem var(--neon-border-color);
+    }
+    10%,
+    20%,
+    55% {
+      text-shadow: none;
+      box-shadow: none;
+    }
   }
 }
 

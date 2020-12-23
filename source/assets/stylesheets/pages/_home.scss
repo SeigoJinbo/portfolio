@@ -72,10 +72,14 @@ h5 {
 .type {
   margin-bottom: 0 !important;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
-  animation: type 3s steps(21) 1s 1 normal both,
-    blinkTextCursor 800ms steps(21) infinite normal;
   overflow: hidden;
   white-space: nowrap;
+  width: 0ch;
+}
+
+.type-anim {
+  animation: type 2.5s steps(21) 0.3s 1 normal both,
+    blinkTextCursor 800ms steps(21) infinite normal;
 }
 
 @keyframes type {

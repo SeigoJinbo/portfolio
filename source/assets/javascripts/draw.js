@@ -27,6 +27,7 @@ const mail = document.querySelector(".fa-envelope");
 const linked = document.querySelector(".fa-linkedin");
 const git = document.querySelector(".fa-github");
 
+const label = document.querySelector(".type");
 // function scrollAnimTriggerCheck(evt) {
 //   var viewBottom = window.scrollY + window.innerHeight + 1000;
 //   if (viewBottom > offsetToTriggerAnimation) {
@@ -66,6 +67,8 @@ const git = document.querySelector(".fa-github");
 
 window.onload = (event) => {
   for (let i = 0; i < projLetters.length; i++) {
+    label.classList.add("type-anim");
+
     projLetters[i].beginElementAt(parseFloat(`${i}` * 0.2));
     setTimeout(() => {
       projFill.forEach(function (letter) {

@@ -34,10 +34,6 @@ h5 {
   border-radius: 8px;
 }
 
-.intro {
-  text-align: center;
-}
-
 .splat {
   position: relative;
   width: 100%;
@@ -200,4 +196,9 @@ h5 {
 #linked,
 #git {
   color: #555;
+}
+
+.about-contents {
+  background: black;
+  text-align: left;
 }

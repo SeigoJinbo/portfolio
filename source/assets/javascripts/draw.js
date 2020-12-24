@@ -14,6 +14,7 @@ var svgLocation = document
 
 // Function to handle the scroll event.
 // Add an event handler to the document for the "onscroll" event
+
 const projLetters = document.querySelectorAll(".project-letter");
 const projFill = document.querySelectorAll(".project-fill");
 
@@ -66,6 +67,11 @@ const label = document.querySelector(".type");
 // }
 
 window.onload = (event) => {
+  TweenMax.to(".main", 0, {
+    css: { display: "block" },
+    delay: 0,
+  });
+
   for (let i = 0; i < projLetters.length; i++) {
     label.classList.add("type-anim");
 

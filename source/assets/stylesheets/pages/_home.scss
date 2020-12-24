@@ -30,7 +30,12 @@ h5 {
   color: #f441a5;
 }
 
+.page {
+  transform: translate(0px, 0%);
+}
+
 .main {
+  display: none;
   border-radius: 8px;
 }
 
@@ -198,7 +203,52 @@ h5 {
   color: #555;
 }
 
-.about-contents {
-  background: black;
-  text-align: left;
+.about-page {
+  display: flex;
+  justify-content: space-around;
+  margin: 5% auto;
+}
+.gundam {
+  height: 450px;
+}
+.red-box {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: 2px solid #da048e;
+  background: rgba(218, 4, 142, 0.3);
+  width: 0px;
+  height: 0px;
+}
+.blue-box {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid #0ae1d4;
+  background: rgba(10, 225, 212, 0.3);
+  width: 0px;
+  height: 0px;
+}
+.more-box {
+  display: none;
+  position: absolute;
+  top: 20%;
+  right: 15%;
+
+  height: 450px;
+  width: 380px;
+}
+.more-text {
+  padding: 16px;
+  height: 100%;
+  width: 100%;
+  background: rgb(255, 255, 151);
+  // display: none;
+  transition: 1s;
+  color: black;
+  font-size: 18px;
+
+  z-index: 1 !important;
 }

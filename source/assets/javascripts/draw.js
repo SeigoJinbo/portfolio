@@ -71,6 +71,10 @@ window.onload = (event) => {
     css: { display: "block" },
     delay: 0,
   });
+  TweenMax.to(".fa-spinner", 0, {
+    css: { display: "none" },
+    delay: 0,
+  });
 
   for (let i = 0; i < projLetters.length; i++) {
     label.classList.add("type-anim");

@@ -1,17 +1,5 @@
 // Import Google fonts
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap");
-@font-face {
-  font-family: "brush";
-  src: font_url("SKYBRUSH.ttf") format("truetype");
-}
-@font-face {
-  font-family: "street";
-  src: font-url("Street-Wars-Demo.ttf") format("truetype");
-}
-@font-face {
-  font-family: "hipster";
-  src: font-url("street-hipster.ttf") format("truetype");
-}
 
 @font-face {
   font-family: "silver";
@@ -22,6 +10,19 @@
   font-family: "neon";
   src: font-url("NeonPlanetDisplay.ttf") format("truetype");
 }
+// @font-face {
+//   font-family: "brush";
+//   src: font_url("SKYBRUSH.ttf") format("truetype");
+// }
+// @font-face {
+//   font-family: "street";
+//   src: font-url("Street-Wars-Demo.ttf") format("truetype");
+// }
+// @font-face {
+//   font-family: "hipster";
+//   src: font-url("street-hipster.ttf") format("truetype");
+// }
+
 // Define fonts for body and headers
 $body-font: "Work Sans", "Helvetica", "sans-serif";
 $headers-font: "Nunito", "Helvetica", "sans-serif";

@@ -1,0 +1,206 @@
+.brush {
+  position: absolute;
+  left: -3%;
+  height: 100vh;
+  width: 104%;
+  // background: url(../../assets/images/white-brush1.png);
+  // background-size: cover;
+  // background-position: center;
+  background: white;
+  transform: scaleX(0.001);
+  display: none;
+  // border: 2px solid black;
+}
+.brush-text {
+  // border: 2px solid green;
+  position: relative;
+  transition: 0.5s;
+  opacity: 0;
+  // margin: 160px 5% 0 5%;
+  .paragraph-1,
+  .paragraph-2,
+  .paragraph-3 {
+    // border: 2px solid purple;
+    position: absolute;
+    font-size: 20px;
+    opacity: 1;
+  }
+
+  .paragraph-1 {
+    top: 200px;
+    left: 160px;
+    width: 500px;
+    height: 130px;
+    // background-color: white;
+  }
+  .paragraph-2 {
+    width: 520px;
+    height: 140px;
+    top: 425px;
+    left: 580px;
+  }
+
+  .paragraph-3 {
+    width: 520px;
+    height: 60px;
+    left: 580px;
+    top: 600px;
+  }
+}
+.blck {
+  background: #ff6969;
+  padding: 4px;
+  height: 640px;
+  width: 435px;
+  position: absolute;
+  bottom: -783px;
+  box-shadow: -24px 24px 1px cyan;
+}
+.design {
+  position: absolute;
+  top: 260px;
+  left: -40px;
+  font-size: 60px;
+  transform: rotate(90deg);
+  text-shadow: 0px 4px 4px rgba(129, 129, 129, 0.25);
+}
+.e {
+  color: white;
+}
+.create-cover {
+  position: absolute;
+  top: 80px;
+  right: 285px;
+  background: white;
+
+  height: 80px;
+  width: 290px;
+}
+.create {
+  position: absolute;
+  font-size: 72px;
+  right: 10px;
+  top: 80px;
+}
+.r {
+  color: #ff6969;
+}
+.chouyaku {
+  font-size: 60px;
+  position: absolute;
+  top: 60px;
+  right: -100px;
+  p {
+    margin: 0px;
+  }
+}
+.sekai-box {
+  position: absolute;
+  top: 28px;
+  left: 540px;
+  display: flex;
+  width: 300px;
+  height: 160px;
+  justify-content: center;
+}
+.sekai {
+  font-size: 92px;
+  color: rgb(187, 187, 187);
+  letter-spacing: 36px;
+  margin: auto 0;
+}
+.nihon {
+  font-size: 45px;
+  position: absolute;
+  top: 360px;
+  left: 385px;
+  letter-spacing: 12px;
+}
+.bouken {
+  font-size: 45px;
+  position: absolute;
+  top: 320px;
+  right: -20px;
+}
+.words {
+  font-size: 60px;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 620px;
+  left: 380px;
+}
+.random-box {
+  position: absolute;
+  top: 700px;
+  left: 560px;
+  width: 420px;
+  display: flex;
+  justify-content: center;
+}
+.random {
+  color: #b0b0b0;
+  font-size: 60px;
+  letter-spacing: 24px;
+}
+.dezain {
+  font-size: 40px;
+  position: absolute;
+  right: -60px;
+  top: 425px;
+}
+.za,
+.i,
+.n {
+  position: absolute;
+}
+.za {
+  top: 70px;
+}
+.i {
+  top: 140px;
+}
+.n {
+  top: 210px;
+}
+
+.monkey {
+  width: 300px;
+  position: absolute;
+  bottom: 40px;
+  opacity: 1;
+}
+.lightbulb {
+  width: 60px;
+  position: absolute;
+  bottom: 300px;
+  left: 180px;
+}
+.bike {
+  width: 300px;
+  position: absolute;
+  top: 170px;
+  right: 120px;
+}
+.v-line-1 {
+  border-left: 1px dashed rgb(172, 172, 172);
+  height: 368px;
+  width: 1px;
+  position: absolute;
+  right: 285px;
+}
+.v-line-2 {
+  border-left: 1px dashed rgb(172, 172, 172);
+  height: 208px;
+  width: 1px;
+  position: absolute;
+  right: 425px;
+  top: 160px;
+}
+.h-line {
+  border-top: 1px dashed black;
+  height: 1px;
+  width: 495px;
+  top: 270px;
+  right: 0;
+  position: absolute;
+}

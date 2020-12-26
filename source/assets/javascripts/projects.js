@@ -4,20 +4,18 @@ const tab = () => {
 
 const navbar = document.querySelector(".port-nav");
 const navStyle = getComputedStyle(navbar);
-const navHeight = navStyle.height;
-console.log(navHeight);
 
 const content = document.querySelector(".tab-content");
 const contentStyle = getComputedStyle(content);
-const contentHeight = contentStyle.height;
-const sum = parseInt(contentHeight) + parseInt(navHeight) + 4;
-console.log(sum);
 
 const portLink = document.querySelector(".port-link");
 portLink.addEventListener("click", (event) => {
   event.preventDefault();
   // TweenMax.to(".portfolio", 0.5, { x: 2000, ease: Circ.easeOut });
 
+  const navHeight = navStyle.height;
+  const contentHeight = contentStyle.height;
+  const sum = parseInt(contentHeight) + parseInt(navHeight) + 4;
   TweenMax.to(".port-border", 0, {
     css: { display: "block" },
     delay: 0,

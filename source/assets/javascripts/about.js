@@ -100,6 +100,7 @@ let aboutAnim = () => {
 };
 
 aboutLink.addEventListener("click", (event) => {
+  event.preventDefault();
   aboutAnim();
 });
 aboutClose.addEventListener("click", (event) => {

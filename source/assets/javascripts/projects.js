@@ -44,17 +44,17 @@ portLink.addEventListener("click", (event) => {
   });
 
   TweenMax.to(".port-border", 0.1, {
-    css: { background: "black" },
+    css: { background: "white" },
     delay: 0.7,
   });
   TweenMax.to(".port-border", 0.1, {
-    css: { background: "white" },
+    css: { background: "black" },
     delay: 0.8,
   });
 
   TweenMax.to(".port-border", 0.1, {
     css: { background: "transparent" },
-    delay: 0.8,
+    delay: 1,
   });
 
   TweenMax.staggerTo(".port-border", 0, {
@@ -63,7 +63,7 @@ portLink.addEventListener("click", (event) => {
   });
   TweenMax.staggerTo(".port-border", 0, {
     css: { className: "-=no-signal" },
-    delay: 1.3,
+    delay: 1,
   });
   TweenMax.staggerTo(".port-border", 0.25, {
     css: { className: "+=noise" },

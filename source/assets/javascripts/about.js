@@ -1,7 +1,5 @@
 const aboutLink = document.querySelector(".more-link");
-
 const aboutClose = document.querySelector(".about-close");
-// console.log(aboutHeight);
 
 let aboutAnim = () => {
   TweenMax.to(".brush", 0, {
@@ -9,7 +7,7 @@ let aboutAnim = () => {
     delay: 0,
     ease: Circ.easeout,
   });
-  TweenMax.to(".brush", 0.25, {
+  TweenMax.to(".brush", 0.3, {
     css: { transform: `scaleX(1)` },
     delay: 0.1,
     ease: Power2.easeOut,
@@ -112,53 +110,11 @@ aboutClose.addEventListener("click", (event) => {
   TweenMax.to(".brush", 0.25, {
     css: { transform: `scaleX(.001)` },
     delay: 0.35,
-    ease: Circ.easeout,
+    ease: Power3.easeOut,
   });
   TweenMax.to(".brush", 0, {
     css: { display: `none` },
     delay: 0.75,
     ease: Circ.easeout,
   });
-
-  // aboutAnim.reverse();
 });
-
-// aboutLink.addEventListener("click", (event) => {
-//   event.preventDefault();
-
-//   TweenMax.to(".more-box", 0, {
-//     css: { display: `block` },
-//     delay: 0,
-//     ease: Circ.easeout,
-//   });
-//   TweenMax.to(".red-box", 0.5, {
-//     css: { height: `${height}px` },
-//     delay: 0,
-//     ease: Circ.easeout,
-//   });
-//   TweenMax.to(".blue-box", 0.5, {
-//     css: { height: `${height}px` },
-//     delay: 0,
-//     ease: Circ.easeout,
-//   });
-//   TweenMax.to(".red-box", 0.5, {
-//     css: { width: `${width}px` },
-//     delay: 0.5,
-//     ease: Circ.easeout,
-//   });
-//   TweenMax.to(".blue-box", 0.5, {
-//     css: { width: `${width}px` },
-//     delay: 0.5,
-//     ease: Circ.easeout,
-//   });
-//   TweenMax.to(".more-text", 0.5, {
-//     css: { display: `block` },
-//     delay: 1,
-//     ease: Circ.easeout,
-//   });
-//   TweenMax.to(".more-text", 0.5, {
-//     css: { background: `black` },
-//     delay: 1,
-//     ease: Circ.easeout,
-//   });
-// });

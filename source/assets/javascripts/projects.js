@@ -24,23 +24,23 @@ portLink.addEventListener("click", (event) => {
   TweenMax.to(".port-border", 0.3, {
     css: { width: "100%" },
     delay: 0.1,
-    ease: Circ.easeout,
+    ease: Power2.easeOut,
   });
   TweenMax.to(".port-border", 0.3, {
     css: { left: "0%" },
     delay: 0.1,
-    ease: Circ.easeout,
+    ease: Power2.easeOut,
   });
 
   TweenMax.to(".port-border", 0.5, {
     css: { top: "25%" },
     delay: 0.3,
-    ease: Circ.easeout,
+    ease: Power1.easeOut,
   });
   TweenMax.to(".port-border", 0.5, {
     css: { height: `${sum}px` },
     delay: 0.3,
-    ease: Circ.easeout,
+    ease: Power1.easeOut,
   });
 
   TweenMax.to(".port-border", 0.1, {
@@ -58,15 +58,15 @@ portLink.addEventListener("click", (event) => {
   });
 
   TweenMax.staggerTo(".port-border", 0, {
-    css: { className: "+=noise" },
+    css: { className: "+=no-signal" },
     delay: 0.9,
   });
   TweenMax.staggerTo(".port-border", 0, {
-    css: { className: "-=noise" },
-    delay: 1,
+    css: { className: "-=no-signal" },
+    delay: 1.3,
   });
   TweenMax.staggerTo(".port-border", 0.25, {
-    css: { className: "+=no-signal" },
+    css: { className: "+=noise" },
     delay: 1.1,
   });
 
@@ -81,14 +81,6 @@ portLink.addEventListener("click", (event) => {
     delay: 1.3,
   });
 
-  TweenMax.staggerTo(".port-border", 0.25, {
-    css: { className: "-=no-signal" },
-    delay: 1.35,
-  });
-  TweenMax.staggerTo(".port-border", 0.25, {
-    css: { className: "+=noise" },
-    delay: 1.4,
-  });
   TweenMax.staggerTo(".port-border", 0.25, {
     css: { className: "-=noise" },
     delay: 2,
@@ -137,23 +129,23 @@ portLink2.addEventListener("click", (event) => {
   TweenMax.to(".port-border", 0.4, {
     css: { height: "0%" },
     delay: 0.4,
-    ease: Circ.easeout,
+    ease: Power1.easeOut,
   });
   TweenMax.to(".port-border", 0.4, {
     css: { top: "50%" },
     delay: 0.4,
-    ease: Circ.easeout,
+    ease: Power1.easeOut,
   });
 
   TweenMax.to(".port-border", 0.2, {
     css: { width: "0%" },
     delay: 0.9,
-    ease: Circ.easeout,
+    ease: Power1.easeOut,
   });
   TweenMax.to(".port-border", 0.2, {
     css: { left: "50%" },
     delay: 0.9,
-    ease: Circ.easeout,
+    ease: Power1.easeOut,
   });
   TweenMax.to(".port-border", 0, {
     css: { display: "none" },
@@ -161,17 +153,3 @@ portLink2.addEventListener("click", (event) => {
     ease: Circ.easeout,
   });
 });
-// TweenMax.to(".port-border", 1, {
-//   css: { scaleX: "1" },
-//   delay: 0,
-//   ease: Circ.easein,
-// });
-// TweenMax.to(".port-border", 0.7, {
-//   css: { scaleY: "1" },
-//   delay: 1,
-//   ease: Circ.easein,
-// });
-
-// event.preventDefault();
-//   TweenMax.to(".tab-content", 0.5, { scaleY: 0, ease: Circ.easein });
-//   TweenMax.to(".portfolio", 0.3, { x: -2000, delay: 0.5, ease: Circ.easein });

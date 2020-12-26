@@ -17,12 +17,7 @@
 }
 
 .button:hover {
-  // border: 2px solid #1a90fa;
-  // transition: 0.5s;
   color: white;
-  // border-radius: 45%;
-  // font-size: 24px;
-  // padding: 12px 24.5px;
 }
 
 .button:before {
@@ -57,65 +52,4 @@
 .button span {
   position: relative;
   z-index: 3;
-}
-
-.paint-box {
-  min-height: 60vh;
-  display: flex;
-  justify-content: space-around;
-  // align-items: center;
-  // flex-direction: column;
-}
-
-.paint-box a {
-  position: relative;
-  width: 300px;
-  height: 75px;
-  margin: 10px 0;
-  font-size: 24px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none !important;
-  transition: 0.5s;
-  color: black;
-}
-
-.paint-box a:hover {
-  color: #fff;
-  // font-family: 'Nanum Brush Script', cursive;
-  // transition-delay: 1s;
-}
-
-.paint-box a:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: url(../images/btn-bg1.png);
-  background-size: cover;
-  transform-origin: left;
-  transition: 0.5s;
-}
-
-.paint-box a:nth-child(2):before {
-  background: url(../images/btn-bg2.png);
-  background-size: cover;
-}
-
-.paint-box a:nth-child(3):before {
-  background: url(../images/btn-bg4.png);
-  background-size: cover;
-}
-
-.paint-box a:hover:before {
-  width: 100%;
-  color: white;
-}
-
-.paint-box a span {
-  position: relative;
-  z-index: 1;
 }

@@ -34,7 +34,7 @@ let aboutAnim = () => {
     ease: Circ.easeout,
   });
   TweenMax.from(".paragraph-2", 2, {
-    css: { left: `560px` },
+    css: { right: `76px` },
     delay: 1.4,
     ease: Power2.easeOut,
   });
@@ -44,7 +44,7 @@ let aboutAnim = () => {
     ease: Circ.easeout,
   });
   TweenMax.from(".paragraph-3", 2, {
-    css: { left: `600px` },
+    css: { right: `36px` },
     delay: 2,
     ease: Power2.easeOut,
   });

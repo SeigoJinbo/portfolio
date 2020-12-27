@@ -8,6 +8,8 @@
   display: none;
 }
 .brush-text {
+  height: 100%;
+  width: 100%;
   position: relative;
   transition: 0.5s;
   opacity: 0;
@@ -29,13 +31,13 @@
     width: 520px;
     height: 140px;
     top: 425px;
-    left: 580px;
+    right: 56px;
   }
 
   .paragraph-3 {
     width: 520px;
     height: 60px;
-    left: 580px;
+    right: 56px;
     top: 600px;
   }
 }
@@ -45,7 +47,7 @@
   height: 640px;
   width: 435px;
   position: absolute;
-  bottom: -783px;
+  bottom: 36px;
   box-shadow: -24px 24px 1px cyan;
 }
 .design {
@@ -89,7 +91,7 @@
 .sekai-box {
   position: absolute;
   top: 28px;
-  left: 540px;
+  right: 27%;
   display: flex;
   width: 300px;
   height: 160px;
@@ -118,12 +120,12 @@
   font-size: 60px;
   transform: rotate(-90deg);
   position: absolute;
-  top: 620px;
+  bottom: 112px;
   left: 380px;
 }
 .random-box {
   position: absolute;
-  top: 700px;
+  bottom: 32px;
   left: 560px;
   width: 420px;
   display: flex;
@@ -137,7 +139,7 @@
 .dezain {
   font-size: 40px;
   position: absolute;
-  right: -60px;
+  right: -5%;
   top: 425px;
 }
 .za,
@@ -179,6 +181,7 @@
   width: 1px;
   position: absolute;
   right: 285px;
+  top: 0px;
 }
 .v-line-2 {
   border-left: 1px dashed rgb(172, 172, 172);

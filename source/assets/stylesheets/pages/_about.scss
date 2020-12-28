@@ -6,6 +6,7 @@
   background: white;
   transform: scaleX(0.001);
   display: none;
+  // overflow: hidden;
 }
 .brush-text {
   height: 100%;
@@ -13,33 +14,34 @@
   position: relative;
   transition: 0.5s;
   opacity: 0;
-  .paragraph-1,
-  .paragraph-2,
-  .paragraph-3 {
-    position: absolute;
-    font-size: 20px;
-    opacity: 1;
-  }
+  // overflow: hidden;
+}
+.paragraph-1,
+.paragraph-2,
+.paragraph-3 {
+  position: absolute;
+  font-size: 20px;
+  opacity: 1;
+}
 
-  .paragraph-1 {
-    top: 200px;
-    left: 160px;
-    width: 500px;
-    height: 130px;
-  }
-  .paragraph-2 {
-    width: 520px;
-    height: 140px;
-    top: 425px;
-    right: 56px;
-  }
+.paragraph-1 {
+  top: 206px;
+  left: 160px;
+  width: 500px;
+  height: 130px;
+}
+.paragraph-2 {
+  width: 520px;
+  height: 140px;
+  top: 425px;
+  right: 56px;
+}
 
-  .paragraph-3 {
-    width: 520px;
-    height: 60px;
-    right: 56px;
-    top: 600px;
-  }
+.paragraph-3 {
+  width: 520px;
+  height: 60px;
+  right: 56px;
+  top: 600px;
 }
 .blck {
   background: #ff6969;
@@ -132,7 +134,7 @@
   justify-content: center;
 }
 .random {
-  color: #b0b0b0;
+  color: #c0c0c0;
   font-size: 60px;
   letter-spacing: 24px;
 }
@@ -198,4 +200,79 @@
   top: 270px;
   right: 0;
   position: absolute;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .paragraph-1 {
+    left: 105px;
+  }
+  .chouyaku {
+    color: #c7c7c7;
+    right: 0px;
+    z-index: -1;
+  }
+
+  .dezain {
+    right: 0px;
+  }
+  .words {
+    color: #d8d6d6;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .blck {
+    height: 600px;
+    width: 290px;
+  }
+
+  .paragraph-1 {
+    font-size: 16px;
+    width: 260px;
+    top: 200px;
+    left: 100px;
+  }
+  .paragraph-2,
+  .paragraph-3 {
+    width: 260px;
+    font-size: 16px;
+  }
+  .paragraph-2 {
+    top: 440px;
+  }
+  .paragraph-3 {
+    top: 615px;
+  }
+
+  .design {
+    left: -70px;
+  }
+  .dezain {
+    right: 0px;
+  }
+  .lightbulb {
+    bottom: 351px;
+    left: 105px;
+  }
+  .bike,
+  .monkey,
+  .words,
+  .bouken {
+    display: none;
+  }
+  .chouyaku {
+    color: #c7c7c7;
+    right: 0px;
+    z-index: -1;
+  }
+  .nihon {
+    left: 187px;
+  }
+  .random-box {
+    left: 0px;
+    width: 340px;
+    .random {
+      font-size: 50px;
+    }
+  }
 }

@@ -13,6 +13,7 @@
 
 html {
   scroll-behavior: smooth;
+  margin-top: -8px;
 }
 body {
   background-color: white !important;
@@ -54,6 +55,10 @@ h5 {
   background-size: cover;
   background-position: center;
   background-blend-mode: darken;
+  .about-text {
+    text-shadow: 2px 2px black;
+    color: white;
+  }
 }
 
 .splat:before {
@@ -68,10 +73,14 @@ h5 {
   background-position: center;
   mix-blend-mode: screen;
 }
-
-.label {
+.header {
   position: absolute;
-  top: 13%;
+  top: 2.5%;
+  h2 {
+    margin-left: 20px;
+  }
+}
+.label {
   font-family: monospace;
   background: black;
   padding: 4px;

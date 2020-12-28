@@ -277,3 +277,60 @@
     }
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .paragraph-2,
+  .paragraph-3 {
+    right: 135px;
+  }
+  .paragraph-1 {
+    top: 270px;
+  }
+  .paragraph-2 {
+    top: 640px;
+  }
+  .paragraph-3 {
+    top: 820px;
+  }
+  .bike {
+    top: 400px;
+    right: 0px;
+  }
+  .lightbulb {
+    top: 520px;
+    left: 100px;
+  }
+  .monkey {
+    display: none;
+  }
+
+  .nihon {
+    left: 180px;
+    top: 420px;
+  }
+  .chouyaku {
+    color: #c7c7c7;
+    right: 0px;
+    z-index: -1;
+  }
+  .blck {
+    height: 80%;
+    width: 410px;
+  }
+  .design {
+    top: 320px;
+  }
+  .dezain {
+    right: 0px;
+    top: 625px;
+  }
+  .words {
+    color: lightgray;
+  }
+  .random-box {
+    left: 0px;
+    .random {
+      color: white;
+    }
+  }
+}

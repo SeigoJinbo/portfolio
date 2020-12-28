@@ -1,179 +1,87 @@
 @media only screen and (max-width: 1000px) {
-  .navbar-lewagon {
-    display: none;
-  }
+  // .navbar-lewagon {
+  //   display: none;
+  // }
 
-  .menu {
-    margin-right: 30px;
-    text-align: center;
-    width: 100%;
-    background: white;
-    display: none;
-  }
-  .menu a {
-    clear: right;
-    text-decoration: none !important;
-    color: gray;
-    margin: 0 10px;
-    line-height: 70px;
-    display: block;
-    border-bottom: 1px solid gray;
-  }
+  // .menu {
+  //   margin-right: 30px;
+  //   text-align: center;
+  //   width: 100%;
+  //   background: white;
+  //   display: none;
+  // }
+  // .menu a {
+  //   clear: right;
+  //   text-decoration: none !important;
+  //   color: gray;
+  //   margin: 0 10px;
+  //   line-height: 70px;
+  //   display: block;
+  //   border-bottom: 1px solid gray;
+  // }
 
-  #toggle {
-    display: none;
-  }
+  // #toggle {
+  //   display: none;
+  // }
 
-  #toggle:checked + .menu {
-    display: block;
-  }
-  .intro {
-    margin-top: 120px;
-  }
-  .paint-box {
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 120px;
-  }
+  // #toggle:checked + .menu {
+  //   display: block;
+  // }
+  // .intro {
+  //   margin-top: 120px;
+  // }
+  // .paint-box {
+  //   min-height: 60vh;
+  //   display: flex;
+  //   align-items: center;
+  //   flex-direction: column;
+  //   margin-bottom: 120px;
+  // }
 
-  .paint-box a {
-    position: relative;
-    width: 300px;
-    height: 75px;
-    margin: 10px 0;
-    font-size: 24px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none !important;
-    transition: 0.5s;
-    color: black;
-  }
+  // .paint-box a {
+  //   position: relative;
+  //   width: 300px;
+  //   height: 75px;
+  //   margin: 10px 0;
+  //   font-size: 24px;
+  //   display: inline-flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   text-decoration: none !important;
+  //   transition: 0.5s;
+  //   color: black;
+  // }
 
-  .paint-box a:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: url(../images/btn-bg1.png);
-    background-size: cover;
-    transform-origin: left;
-    transition: 0.5s;
-  }
+  // .paint-box a:before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 0;
+  //   height: 100%;
+  //   background: url(../images/btn-bg1.png);
+  //   background-size: cover;
+  //   transform-origin: left;
+  //   transition: 0.5s;
+  // }
 
-  .paint-box a:nth-child(2):before {
-    background: url(../images/btn-bg2.png);
-    background-size: cover;
-  }
+  // .paint-box a:nth-child(2):before {
+  //   background: url(../images/btn-bg2.png);
+  //   background-size: cover;
+  // }
 
-  .paint-box a:nth-child(3):before {
-    background: url(../images/btn-bg4.png);
-    background-size: cover;
-  }
+  // .paint-box a:nth-child(3):before {
+  //   background: url(../images/btn-bg4.png);
+  //   background-size: cover;
+  // }
 
-  .paint-box a:hover:before {
-    width: 100%;
-    color: white;
-  }
+  // .paint-box a:hover:before {
+  //   width: 100%;
+  //   color: white;
+  // }
 
-  .paint-box a span {
-    position: relative;
-    z-index: 1;
-  }
-
-  .splat {
-    h2 {
-      // text-align: center;
-      position: absolute;
-      top: 20px;
-      left: 20px;
-    }
-
-    .about-text {
-      position: absolute;
-      bottom: 20%;
-      right: 36px;
-      text-align: right;
-      text-shadow: 2px 2px black;
-      font-size: 18px;
-      color: white;
-      font-family: "Nanum Brush Script", cursive;
-      a {
-        text-decoration: none;
-        color: orange;
-      }
-    }
-  }
-
-  #proj-silver {
-    transform: scale(0.8);
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    animation: fill 0.5s ease forwards 3.5s;
-    filter: drop-shadow(3px 3px 0px rgba(3, 102, 217, 1));
-  }
-  #contact-silver {
-    position: absolute;
-    top: 60%;
-    right: 15%;
-    filter: drop-shadow(3px 3px 0px rgba(3, 102, 217, 1));
-  }
-  #contact-silver:hover {
-    filter: invert(1) drop-shadow(3px 3px 0px rgb(217, 3, 206));
-  }
-
-  :root {
-    --neon-text-color: blue;
-    --neon-border-color: red;
-  }
-
-  .neon {
-    display: none;
-    font-size: 4rem;
-    color: #fff;
-    border: 0.2rem solid #fff;
-    border-radius: 2rem;
-    animation: flicker 1.5s infinite alternate;
-    font-family: "neon";
-  }
-
-  .neon::selection {
-    background-color: var(--neon-border-color);
-    color: var(--neon-text-color);
-  }
-  .neon:focus {
-    outline: none;
-  }
-  @keyframes flicker {
-    0%,
-    19%,
-    21%,
-    23%,
-    25%,
-    54%,
-    56%,
-    100% {
-      text-shadow: -0.1rem -0.1rem 0.5rem #fff, 0.1rem 0.1rem 0.5rem #fff,
-        0 0 1rem var(--neon-text-color), 0 0 2rem var(--neon-text-color),
-        0 0 3rem var(--neon-text-color), 0 0 4rem var(--neon-text-color),
-        0 0 5rem var(--neon-text-color);
-
-      box-shadow: 0 0 0.25rem #fff, inset 0 0 0.25rem #fff,
-        0 0 1rem var(--neon-border-color),
-        inset 0 0 1rem var(--neon-border-color),
-        0 0 2rem var(--neon-border-color),
-        inset 0 0 2rem var(--neon-border-color);
-    }
-    20%,
-    24%,
-    55% {
-      text-shadow: none;
-      box-shadow: none;
-    }
-  }
+  // .paint-box a span {
+  //   position: relative;
+  //   z-index: 1;
+  // }
 }

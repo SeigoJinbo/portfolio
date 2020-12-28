@@ -86,11 +86,6 @@
   border-top: 1px solid grey;
 }
 
-.iru {
-  // margin: 12px;
-  // border-bottom: 1px solid grey;
-}
-
 .iru-contents {
   img {
     border-radius: 4px;
@@ -98,9 +93,6 @@
   }
 }
 
-.beats {
-  // margin: 12px 12px 0px 12px;
-}
 .beats-contents {
   img {
     border-radius: 4px;
@@ -111,10 +103,10 @@
   padding: 4px;
 }
 
-@media only screen and (min-width: 1000px) {
-  label {
-    display: none;
-  }
+@media only screen and (min-width: 768px) {
+  // label {
+  //   display: none;
+  // }
 
   .intro {
     text-align: center;
@@ -122,15 +114,15 @@
   }
 
   .splat {
-    h2 {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-    }
+    // h2 {
+    //   position: absolute;
+    //   top: 20px;
+    //   left: 20px;
+    // }
 
     .about-text {
       position: absolute;
-      top: 120px;
+      bottom: 35%;
       right: 10px;
       text-align: right;
       font-size: 18px;
@@ -145,11 +137,9 @@
   .iru-contents,
   .beats-contents {
     display: flex;
-    // border: 1px solid black;
     justify-content: space-around;
     img {
       width: 30vw !important;
-
       margin: auto 0;
     }
     .iru-description,
@@ -168,18 +158,6 @@
   }
   #proj-silver:hover {
     filter: invert(1) drop-shadow(5px 5px 0px rgb(217, 3, 206));
-  }
-
-  #contact-silver {
-    display: none;
-    position: absolute;
-    top: 60%;
-    right: 15%;
-    filter: drop-shadow(-3px -3px 0px rgba(218, 4, 142, 1));
-  }
-  #contact-silver:hover {
-    filter: invert(1) drop-shadow(3px 3px 0px rgb(217, 3, 206));
-    transition: 2s -webkit-filter linear;
   }
 
   :root {
@@ -239,10 +217,6 @@
     text-shadow: 0 0 15px #0f0;
   }
   .neon {
-    // display: none;
-    // position: absolute;
-    // top: 15%;
-    // right: 13%;
     font-size: 2rem;
     padding: 8px;
     color: rgb(129, 129, 129);
@@ -251,7 +225,6 @@
     font-family: "neon";
   }
   .on {
-    // display: none;
     color: rgb(228, 228, 228);
     border: 2px solid rgb(228, 228, 228);
     animation: flicker 1.5s forwards alternate;
@@ -305,27 +278,3 @@
     }
   }
 }
-
-// @media only screen and (max-width: 1200px) {
-//   label {
-//     display: none;
-//   }
-//   .small-nav {
-//     display: none;
-//   }
-//   .intro {
-//     text-align: center;
-//     margin-top: 300px;
-//   }
-
-//   // .iru-contents,
-//   // .beats-contents {
-//   //   img {
-//   //     width: 400px;
-//   //     height: 220px;
-//   //   }
-//   // }
-//   .splat2 {
-//     background-size: cover;
-//   }
-// }

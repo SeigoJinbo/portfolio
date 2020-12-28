@@ -168,7 +168,7 @@
 .lightbulb {
   width: 60px;
   position: absolute;
-  bottom: 300px;
+  top: 360px;
   left: 180px;
 }
 .bike {
@@ -222,7 +222,7 @@
 
 @media only screen and (max-width: 767px) {
   .blck {
-    height: 600px;
+    height: 74%;
     width: 290px;
   }
 
@@ -246,12 +246,13 @@
 
   .design {
     left: -70px;
+    top: 32%;
   }
   .dezain {
     right: 0px;
   }
   .lightbulb {
-    bottom: 351px;
+    top: 360px;
     left: 105px;
   }
   .bike,

@@ -70,13 +70,19 @@
   }
 
   .iru-contents,
-  .beats-contents {
+  .beats-contents,
+  .dice-contents {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    img {
+    .foxy-beats-pic,
+    .iru-pic {
       width: 70vw;
+      margin: 12px 0 24px 0;
+    }
+    .liars-dice-pic {
+      width: 25vw;
       margin: 12px 0 24px 0;
     }
     .iru-description,

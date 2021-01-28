@@ -27,7 +27,7 @@
 }
 .nav-link {
   height: 80px;
-  width: 120px;
+  // width: 120px;
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
@@ -59,6 +59,9 @@
 .nav-tabs {
   height: 80px;
   border-bottom: none;
+  flex-wrap: nowrap !important;
+  overflow: scroll;
+  width: 100%;
   li a {
     color: white;
     text-align: center;
@@ -104,22 +107,12 @@
 }
 
 @media only screen and (min-width: 768px) {
-  // label {
-  //   display: none;
-  // }
-
   .intro {
     text-align: center;
     margin-top: 300px;
   }
 
   .splat {
-    // h2 {
-    //   position: absolute;
-    //   top: 20px;
-    //   left: 20px;
-    // }
-
     .about-text {
       position: absolute;
       bottom: 35%;
@@ -135,15 +128,22 @@
   }
 
   .iru-contents,
-  .beats-contents {
+  .beats-contents,
+  .dice-contents {
     display: flex;
     justify-content: space-around;
-    img {
+    .iru-pic,
+    .foxy-beats-pic {
       width: 30vw !important;
       margin: auto 0;
     }
+    .liars-dice-pic {
+      width: 9vw !important;
+      margin: auto 0;
+    }
     .iru-description,
-    .beats-description {
+    .beats-description,
+    .dice-description {
       width: 30vw;
       margin: auto 0;
     }

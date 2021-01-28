@@ -76,20 +76,20 @@ portLink.addEventListener("click", (event) => {
     ease: Circ.easein,
   });
 
-  TweenMax.to(".portfolio", 0.5, {
-    css: { display: "none" },
-    delay: 1.3,
-  });
+  // TweenMax.to(".portfolio", 0.5, {
+  //   css: { display: "none" },
+  //   delay: 1.3,
+  // });
 
   TweenMax.staggerTo(".port-border", 0.25, {
     css: { className: "-=noise" },
     delay: 2,
   });
 
-  TweenMax.to(".portfolio", 0, {
-    css: { display: "block" },
-    delay: 1.9,
-  });
+  // TweenMax.to(".portfolio", 0, {
+  //   css: { display: "block" },
+  //   delay: 1.9,
+  // });
   TweenMax.staggerTo(".port-border", 0.25, {
     css: { className: "+=no-signal2" },
     delay: 2.1,
